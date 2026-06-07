@@ -57,9 +57,10 @@ export default function About() {
             className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]"
           >
             <Image
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=85&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&auto=format&fit=crop"
               alt="明るいモダンオフィス"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
           </motion.div>

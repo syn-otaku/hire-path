@@ -1,7 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 const companies = [
   "SmartHR株式会社",
   "Sansan株式会社",
@@ -21,11 +17,7 @@ export default function TrustedBy() {
           全国 1,200 社以上の採用チームに選ばれています
         </p>
         <div className="overflow-hidden">
-          <motion.div
-            className="flex gap-12 items-center"
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
-          >
+          <div className="flex gap-12 items-center marquee-track">
             {[...companies, ...companies].map((name, i) => (
               <span
                 key={i}
@@ -34,9 +26,21 @@ export default function TrustedBy() {
                 {name}
               </span>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
+
+      <style>{`
+        @media (prefers-reduced-motion: no-preference) {
+          .marquee-track {
+            animation: marquee 28s linear infinite;
+          }
+        }
+        @keyframes marquee {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
     </section>
   );
 }

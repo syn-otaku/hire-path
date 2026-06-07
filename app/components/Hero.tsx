@@ -10,9 +10,10 @@ export default function Hero() {
       {/* Full-width background photo */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1800&q=85&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80&auto=format&fit=crop"
           alt="明るいオフィスで働く採用チーム"
           fill
+          sizes="100vw"
           className="object-cover object-center"
           priority
         />

@@ -26,9 +26,10 @@ export default function Solution() {
             className="relative rounded-3xl overflow-hidden shadow-xl aspect-[4/3]"
           >
             <Image
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&q=85&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80&auto=format&fit=crop"
               alt="チームで採用業務を進める様子"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
             {/* Floating stat card */}

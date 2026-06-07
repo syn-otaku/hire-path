@@ -12,9 +12,10 @@ export default function FinalCTA() {
           {/* Background photo */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1400&q=85&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=80&auto=format&fit=crop"
               alt="成功した採用チーム"
               fill
+              sizes="(max-width: 1280px) 100vw, 1200px"
               className="object-cover object-center"
             />
             <div className="absolute inset-0 bg-indigo-900/75" />
