@@ -32,7 +32,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 text-indigo-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6"
           >
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-green-500 motion-safe:animate-pulse" />
             AI採用管理プラットフォーム
           </motion.div>
 
@@ -110,9 +110,9 @@ export default function Hero() {
               ))}
             </div>
             <div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1" role="img" aria-label="5つ星評価">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-amber-400 text-sm">★</span>
+                  <span key={i} className="text-amber-400 text-sm" aria-hidden="true">★</span>
                 ))}
               </div>
               <p className="text-sm text-slate-500">

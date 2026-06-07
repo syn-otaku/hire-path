@@ -37,11 +37,13 @@ function FAQItem({ q, a }: { q: string; a: string }) {
     <div className="border-b border-slate-100">
       <button
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
         className="w-full flex items-center justify-between py-5 text-left"
       >
         <span className="font-medium text-slate-800 text-base">{q}</span>
         <ChevronDown
           size={20}
+          aria-hidden="true"
           className={`text-slate-400 shrink-0 transition-transform ${open ? "rotate-180" : ""}`}
         />
       </button>

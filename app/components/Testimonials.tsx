@@ -62,9 +62,9 @@ export default function Testimonials() {
               className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm flex flex-col"
             >
               {/* Stars */}
-              <div className="flex gap-0.5 mb-5">
+              <div className="flex gap-0.5 mb-5" role="img" aria-label="5つ星評価">
                 {[...Array(5)].map((_, j) => (
-                  <span key={j} className="text-amber-400">★</span>
+                  <span key={j} className="text-amber-400" aria-hidden="true">★</span>
                 ))}
               </div>
               <p className="text-slate-700 text-base leading-relaxed flex-1 mb-8">
