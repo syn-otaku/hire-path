@@ -17,14 +17,13 @@ export default function Hero() {
           className="object-cover object-center"
           priority
         />
-        {/* Gradient overlay — left side lighter for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/60 to-white/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/92 via-white/65 to-white/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-16 w-full">
-        <div className="max-w-2xl">
+        <div className="max-w-xl">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -33,7 +32,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 text-indigo-700 text-sm font-medium px-4 py-1.5 rounded-full mb-6"
           >
             <span className="w-2 h-2 rounded-full bg-green-500 motion-safe:animate-pulse" />
-            AI採用管理プラットフォーム
+            採用管理SaaS — ポートフォリオ制作サンプル
           </motion.div>
 
           {/* Headline */}
@@ -41,7 +40,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl md:text-6xl font-bold text-slate-900 leading-tight tracking-tight mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 leading-snug tracking-tight mb-6"
           >
             採用業務を、
             <br />
@@ -55,13 +54,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-slate-600 leading-relaxed mb-10 max-w-xl"
+            className="text-lg text-slate-600 leading-relaxed mb-10"
           >
-            求人作成、応募者管理、面接調整、評価共有まで。
-            <br />
-            HirePathは採用チームの業務をひとつにまとめる
-            <br />
-            AI採用管理プラットフォームです。
+            求人作成・応募者管理・面接調整・評価共有まで。
+            採用チームの業務をひとつにまとめるAI採用管理プラットフォームのランディングページ制作サンプルです。
           </motion.p>
 
           {/* CTAs */}
@@ -72,54 +68,30 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="#"
+              href="#features"
               className="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-7 py-3.5 rounded-xl transition-colors text-base focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 outline-none"
             >
-              無料デモを見る
+              機能を見る
               <ArrowRight size={18} />
             </a>
             <a
-              href="#features"
+              href="#pricing"
               className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-700 font-semibold px-7 py-3.5 rounded-xl border border-slate-200 transition-colors text-base focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 outline-none"
             >
               <Play size={16} className="text-indigo-600" />
-              機能を見る
+              料金を見る
             </a>
           </motion.div>
 
-          {/* Social proof mini */}
-          <motion.div
+          {/* Portfolio note */}
+          <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-10 flex items-center gap-4"
+            className="mt-8 text-xs text-slate-400 leading-relaxed"
           >
-            <div className="flex -space-x-2">
-              {[
-                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&q=80&auto=format&fit=crop&crop=face",
-                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&q=80&auto=format&fit=crop&crop=face",
-                "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&q=80&auto=format&fit=crop&crop=face",
-                "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&q=80&auto=format&fit=crop&crop=face",
-              ].map((src, i) => (
-                <div
-                  key={i}
-                  className="w-9 h-9 rounded-full border-2 border-white overflow-hidden"
-                >
-                  <Image src={src} alt="ユーザー" width={36} height={36} className="object-cover" />
-                </div>
-              ))}
-            </div>
-            <div>
-              <div className="flex items-center gap-1" role="img" aria-label="5つ星評価">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-amber-400 text-sm" aria-hidden="true">★</span>
-                ))}
-              </div>
-              <p className="text-sm text-slate-500">
-                採用チームから好評をいただいています
-              </p>
-            </div>
-          </motion.div>
+            ※ 掲載されているデータ・企業名・人物はすべてダミーです。実際のサービスではありません。
+          </motion.p>
         </div>
       </div>
     </section>

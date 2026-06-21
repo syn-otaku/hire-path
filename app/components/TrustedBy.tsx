@@ -1,32 +1,31 @@
-const logos = [
-  { width: "w-24" },
-  { width: "w-32" },
-  { width: "w-20" },
-  { width: "w-28" },
-  { width: "w-24" },
-  { width: "w-20" },
-  { width: "w-32" },
-  { width: "w-24" },
+const categories = [
+  "スタートアップ",
+  "中小企業",
+  "人材紹介会社",
+  "採用代行（RPO）",
+  "メガベンチャー",
+  "事業会社HR",
 ];
 
 export default function TrustedBy() {
   return (
-    <section className="py-14 bg-slate-50 border-y border-slate-100">
-      <div className="max-w-5xl mx-auto px-6">
-        <p className="text-center text-xs text-slate-400 font-medium mb-10 tracking-widest uppercase">
-          スタートアップから上場企業まで、採用チームに導入されています
+    <section className="py-12 bg-slate-50 border-y border-slate-100">
+      <div className="max-w-4xl mx-auto px-6">
+        <p className="text-center text-xs text-slate-400 font-medium mb-8 tracking-widest uppercase">
+          想定する導入対象
         </p>
-        <div className="grid grid-cols-4 md:grid-cols-8 gap-6 items-center justify-items-center">
-          {logos.map((logo, i) => (
-            <div
+        <div className="flex flex-wrap justify-center gap-3">
+          {categories.map((cat, i) => (
+            <span
               key={i}
-              className={`h-7 ${logo.width} rounded-full bg-slate-200`}
-              aria-hidden="true"
-            />
+              className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-500 text-sm font-medium"
+            >
+              {cat}
+            </span>
           ))}
         </div>
         <p className="text-center text-xs text-slate-400 mt-8">
-          ※ 導入企業のロゴは掲載許諾取得後に順次公開予定です
+          ※ このセクションはポートフォリオサンプルです。実在する導入実績ではありません。
         </p>
       </div>
     </section>

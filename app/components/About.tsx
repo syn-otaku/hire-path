@@ -16,34 +16,33 @@ export default function About() {
             transition={{ duration: 0.7 }}
           >
             <span className="text-indigo-600 text-sm font-semibold tracking-widest uppercase mb-3 block">
-              About HirePath
+              About this Sample
             </span>
-            <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">
+            <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-snug">
               採用を、チームの
               <br />
               強みにするために。
             </h2>
             <p className="text-slate-600 text-lg leading-relaxed mb-6">
-              HirePathは、採用担当者・人事責任者・経営者のすべてが「採用の全体像」を
-              把握できるよう設計されています。
+              このページは、採用管理SaaSのランディングページを想定して制作したポートフォリオサンプルです。
+              実際のサービスではありません。
             </p>
             <p className="text-slate-600 text-base leading-relaxed mb-8">
-              バラバラのツール、メールでのやり取り、スプレッドシート管理。
-              そういった非効率を一掃し、採用チームが本来すべきことに集中できる
-              環境を提供します。
+              採用担当者が抱える「情報の分散」「調整コスト」「評価の属人化」といった課題を解決するプロダクトを想定し、
+              情報設計・UIデザイン・コーディングまで一貫して制作しました。
             </p>
-            <div className="flex gap-10">
+            <div className="flex flex-wrap gap-8">
               <div>
-                <p className="text-3xl font-bold text-indigo-600">−42<span className="text-lg">%</span></p>
-                <p className="text-sm text-slate-500 mt-1">採用工数削減<span className="text-xs text-slate-400 block">想定効果（β導入調査）</span></p>
+                <p className="text-3xl font-bold text-indigo-600">15<span className="text-lg">セクション</span></p>
+                <p className="text-sm text-slate-500 mt-1">LP構成</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-green-500">3<span className="text-lg">日</span></p>
-                <p className="text-sm text-slate-500 mt-1">平均オンボーディング期間</p>
+                <p className="text-3xl font-bold text-green-500">Next.js</p>
+                <p className="text-sm text-slate-500 mt-1">+ Tailwind CSS</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-amber-500">14<span className="text-lg">日</span></p>
-                <p className="text-sm text-slate-500 mt-1">無料トライアル</p>
+                <p className="text-3xl font-bold text-amber-500">100<span className="text-lg">%</span></p>
+                <p className="text-sm text-slate-500 mt-1">スクラッチ制作</p>
               </div>
             </div>
           </motion.div>
