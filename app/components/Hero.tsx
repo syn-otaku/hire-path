@@ -116,7 +116,7 @@ export default function Hero() {
                 ))}
               </div>
               <p className="text-sm text-slate-500">
-                <span className="font-semibold text-slate-700">1,200社以上</span>が導入済み
+                採用チームから好評をいただいています
               </p>
             </div>
           </motion.div>

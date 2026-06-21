@@ -34,16 +34,16 @@ export default function About() {
             </p>
             <div className="flex gap-10">
               <div>
-                <p className="text-3xl font-bold text-indigo-600">1,200<span className="text-lg">社+</span></p>
-                <p className="text-sm text-slate-500 mt-1">導入企業数</p>
+                <p className="text-3xl font-bold text-indigo-600">−42<span className="text-lg">%</span></p>
+                <p className="text-sm text-slate-500 mt-1">採用工数削減<span className="text-xs text-slate-400 block">想定効果（β導入調査）</span></p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-green-500">42<span className="text-lg">%</span></p>
-                <p className="text-sm text-slate-500 mt-1">採用工数削減（平均）</p>
+                <p className="text-3xl font-bold text-green-500">3<span className="text-lg">日</span></p>
+                <p className="text-sm text-slate-500 mt-1">平均オンボーディング期間</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-amber-500">4.8<span className="text-lg">/5</span></p>
-                <p className="text-sm text-slate-500 mt-1">顧客満足度</p>
+                <p className="text-3xl font-bold text-amber-500">14<span className="text-lg">日</span></p>
+                <p className="text-sm text-slate-500 mt-1">無料トライアル</p>
               </div>
             </div>
           </motion.div>

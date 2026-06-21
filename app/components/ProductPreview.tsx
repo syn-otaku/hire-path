@@ -62,7 +62,7 @@ export default function ProductPreview() {
 
           <div className="p-8">
             {/* KPI cards */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               {kpis.map((kpi, i) => (
                 <div key={i} className="bg-slate-50 rounded-2xl p-5 border border-slate-100">
                   <p className="text-xs text-slate-400 mb-2">{kpi.label}</p>
@@ -73,7 +73,7 @@ export default function ProductPreview() {
             </div>
 
             {/* Applicant table */}
-            <div className="rounded-2xl border border-slate-100 overflow-hidden">
+            <div className="rounded-2xl border border-slate-100 overflow-hidden overflow-x-auto">
               <div className="bg-slate-50 px-5 py-3 border-b border-slate-100 flex items-center justify-between">
                 <span className="text-sm font-semibold text-slate-700">応募者一覧</span>
                 <span className="text-xs text-slate-400">全 48 件</span>

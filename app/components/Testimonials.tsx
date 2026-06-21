@@ -1,32 +1,34 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const testimonials = [
   {
     quote:
-      "面接の日程調整だけで週に3〜4時間使っていましたが、HirePathで完全自動化できました。今はその時間を候補者との質の高い対話に使っています。",
+      "面接の日程調整だけで週に3〜4時間使っていました。HirePathで自動化してからは、その時間をそのまま候補者との対話に充てられています。",
     name: "山本 裕子",
     title: "人事責任者",
-    company: "テックスタートアップ A社",
-    photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&q=80&auto=format&fit=crop&crop=face",
+    company: "テック系スタートアップ",
+    initial: "山",
+    color: "bg-indigo-100 text-indigo-700",
   },
   {
     quote:
-      "応募者ごとに評価がバラバラで困っていました。HirePathの評価フォームを使い始めてから、面接官全員の意見を公平に比較できるようになりました。採用の質が上がったと実感しています。",
+      "面接官ごとに評価のフォーマットがバラバラで、集計が毎回大変でした。HirePathの評価フォームを導入してから、全員の意見を同じ基準で比較できるようになりました。",
     name: "佐々木 剛",
     title: "採用マネージャー",
-    company: "製造業 B社（従業員200名）",
-    photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=120&q=80&auto=format&fit=crop&crop=face",
+    company: "製造業（従業員200名）",
+    initial: "佐",
+    color: "bg-green-100 text-green-700",
   },
   {
     quote:
-      "複数クライアントの求人を同時に動かすのが大変でしたが、HirePathで全案件を一元管理できるようになりました。クライアントへの進捗報告も格段に楽になりました。",
+      "複数クライアントの案件を並行して動かすのが難しかったのですが、一元管理できるようになって進捗共有の手間が激減しました。",
     name: "田中 綾香",
     title: "RPOコンサルタント",
-    company: "人材紹介会社 C社",
-    photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&q=80&auto=format&fit=crop&crop=face",
+    company: "人材紹介会社",
+    initial: "田",
+    color: "bg-amber-100 text-amber-700",
   },
 ];
 
@@ -44,10 +46,10 @@ export default function Testimonials() {
             Testimonials
           </span>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">
-            採用担当者の声
+            導入された方の声
           </h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto">
-            HirePathを使い始めた方々から寄せられたフィードバックです。
+            実際に使い始めた採用担当者からのフィードバックです。
           </p>
         </motion.div>
 
@@ -61,30 +63,16 @@ export default function Testimonials() {
               transition={{ duration: 0.6, delay: i * 0.12 }}
               className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm flex flex-col"
             >
-              {/* Stars */}
-              <div className="flex gap-0.5 mb-5" role="img" aria-label="5つ星評価">
-                {[...Array(5)].map((_, j) => (
-                  <span key={j} className="text-amber-400" aria-hidden="true">★</span>
-                ))}
-              </div>
               <p className="text-slate-700 text-base leading-relaxed flex-1 mb-8">
-                "{t.quote}"
+                &ldquo;{t.quote}&rdquo;
               </p>
-              {/* Person */}
-              <div className="flex items-center gap-4">
-                <div className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 ring-2 ring-indigo-100">
-                  <Image
-                    src={t.photo}
-                    alt={t.name}
-                    fill
-                    sizes="56px"
-                    className="object-cover"
-                  />
+              <div className="flex items-center gap-4 pt-6 border-t border-slate-100">
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold shrink-0 ${t.color}`}>
+                  {t.initial}
                 </div>
                 <div>
-                  <p className="font-semibold text-slate-800">{t.name}</p>
-                  <p className="text-sm text-slate-500">{t.title}</p>
-                  <p className="text-xs text-slate-500">{t.company}</p>
+                  <p className="font-semibold text-slate-800 text-sm">{t.name}</p>
+                  <p className="text-xs text-slate-500">{t.title} · {t.company}</p>
                 </div>
               </div>
             </motion.div>

@@ -12,11 +12,19 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center">
-                <span className="text-white text-sm font-bold">H</span>
-              </div>
-              <span className="text-white font-semibold text-lg">HirePath</span>
+            <div className="flex items-center gap-2.5 mb-4">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect width="32" height="32" rx="8" fill="url(#footer-logo-grad)" />
+                <path d="M9 8v16M9 16h14M23 8v16" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <circle cx="23" cy="8" r="2.5" fill="#34D399" />
+                <defs>
+                  <linearGradient id="footer-logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#6366F1" />
+                    <stop offset="1" stopColor="#4F46E5" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span className="text-white font-bold text-lg tracking-tight">HirePath</span>
             </div>
             <p className="text-sm leading-relaxed text-slate-500">
               採用業務を、もっと速く、

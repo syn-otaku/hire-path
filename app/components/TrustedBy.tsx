@@ -1,46 +1,34 @@
-const companies = [
-  "SmartHR株式会社",
-  "Sansan株式会社",
-  "freee株式会社",
-  "ChatWork株式会社",
-  "HENNGE株式会社",
-  "Repro株式会社",
-  "ログラス株式会社",
-  "UPSIDER株式会社",
+const logos = [
+  { width: "w-24" },
+  { width: "w-32" },
+  { width: "w-20" },
+  { width: "w-28" },
+  { width: "w-24" },
+  { width: "w-20" },
+  { width: "w-32" },
+  { width: "w-24" },
 ];
 
 export default function TrustedBy() {
   return (
     <section className="py-14 bg-slate-50 border-y border-slate-100">
-      <div className="max-w-7xl mx-auto px-6">
-        <p className="text-center text-sm text-slate-400 font-medium mb-8 tracking-wide uppercase">
-          全国 1,200 社以上の採用チームに選ばれています
+      <div className="max-w-5xl mx-auto px-6">
+        <p className="text-center text-xs text-slate-400 font-medium mb-10 tracking-widest uppercase">
+          スタートアップから上場企業まで、採用チームに導入されています
         </p>
-        <div className="overflow-hidden">
-          <div className="flex gap-12 items-center marquee-track">
-            {[...companies, ...companies].map((name, i) => (
-              <span
-                key={i}
-                className="text-slate-400 font-semibold text-base whitespace-nowrap shrink-0"
-              >
-                {name}
-              </span>
-            ))}
-          </div>
+        <div className="grid grid-cols-4 md:grid-cols-8 gap-6 items-center justify-items-center">
+          {logos.map((logo, i) => (
+            <div
+              key={i}
+              className={`h-7 ${logo.width} rounded-full bg-slate-200`}
+              aria-hidden="true"
+            />
+          ))}
         </div>
+        <p className="text-center text-xs text-slate-400 mt-8">
+          ※ 導入企業のロゴは掲載許諾取得後に順次公開予定です
+        </p>
       </div>
-
-      <style>{`
-        @media (prefers-reduced-motion: no-preference) {
-          .marquee-track {
-            animation: marquee 28s linear infinite;
-          }
-        }
-        @keyframes marquee {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-      `}</style>
     </section>
   );
 }

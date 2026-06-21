@@ -34,11 +34,11 @@ export default function Solution() {
             />
             {/* Floating stat card */}
             <div className="absolute bottom-6 left-6 bg-white rounded-2xl shadow-lg px-5 py-4">
-              <p className="text-xs text-slate-500 mb-1">採用リードタイム</p>
+              <p className="text-xs text-slate-500 mb-1">採用リードタイム削減</p>
               <p className="text-2xl font-bold text-indigo-600">
                 −42<span className="text-base font-semibold">%</span>
               </p>
-              <p className="text-xs text-slate-500 mt-0.5">導入後平均（サンプルデータ）</p>
+              <p className="text-xs text-slate-400 mt-0.5">β版導入調査・想定効果</p>
             </div>
           </motion.div>
 
