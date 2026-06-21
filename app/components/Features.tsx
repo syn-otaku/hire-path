@@ -70,7 +70,7 @@ export default function Features() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((f, i) => (
             <motion.div
               key={i}
@@ -78,12 +78,12 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="bg-white rounded-2xl border border-slate-100 p-7 hover:shadow-md transition-shadow"
+              className="bg-white rounded-2xl border border-slate-100 p-8 hover:shadow-md transition-shadow"
             >
               <div className={`w-12 h-12 rounded-xl ${f.color} flex items-center justify-center mb-5`}>
                 <f.icon size={22} />
               </div>
-              <h3 className="font-bold text-slate-800 text-lg mb-2">{f.title}</h3>
+              <h3 className="font-bold text-slate-800 text-lg mb-3">{f.title}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">{f.desc}</p>
             </motion.div>
           ))}

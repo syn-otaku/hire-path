@@ -81,7 +81,7 @@ export default function FAQ() {
           <p className="text-xs text-slate-400">※ 以下はポートフォリオサンプルとして想定した回答です。実際のサービスではありません。</p>
         </motion.div>
 
-        <div className="bg-white rounded-3xl px-8 py-2 border border-slate-100 shadow-sm">
+        <div className="bg-white rounded-3xl px-10 py-6 border border-slate-100 shadow-sm">
           {faqs.map((faq, i) => (
             <FAQItem key={i} q={faq.q} a={faq.a} />
           ))}

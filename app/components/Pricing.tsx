@@ -75,7 +75,7 @@ export default function Pricing() {
           <p className="text-xs text-slate-400 mt-3">※ 料金・プランはポートフォリオサンプルです。実際のサービスではありません。</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {plans.map((plan, i) => (
             <motion.div
               key={i}

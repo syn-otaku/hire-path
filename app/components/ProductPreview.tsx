@@ -60,11 +60,11 @@ export default function ProductPreview() {
             </div>
           </div>
 
-          <div className="p-8">
+          <div className="p-10">
             {/* KPI cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-10">
               {kpis.map((kpi, i) => (
-                <div key={i} className="bg-slate-50 rounded-2xl p-5 border border-slate-100">
+                <div key={i} className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                   <p className="text-xs text-slate-400 mb-2">{kpi.label}</p>
                   <p className={`text-3xl font-bold ${kpi.color} mb-1`}>{kpi.value}</p>
                   <p className="text-xs text-green-500 font-medium">{kpi.delta} 先月比</p>

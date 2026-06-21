@@ -53,7 +53,7 @@ export default function Problem() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {problems.map((item, i) => (
             <motion.div
               key={i}
@@ -61,12 +61,12 @@ export default function Problem() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="bg-slate-50 rounded-2xl p-7 border border-slate-100"
+              className="bg-slate-50 rounded-2xl p-8 border border-slate-100"
             >
-              <div className="w-11 h-11 rounded-xl bg-red-50 flex items-center justify-center mb-5">
+              <div className="w-11 h-11 rounded-xl bg-red-50 flex items-center justify-center mb-6">
                 <item.icon size={22} className="text-red-400" />
               </div>
-              <h3 className="font-bold text-slate-800 text-lg mb-2">{item.title}</h3>
+              <h3 className="font-bold text-slate-800 text-lg mb-3">{item.title}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}

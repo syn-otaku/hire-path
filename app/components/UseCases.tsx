@@ -63,7 +63,7 @@ export default function UseCases() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {cases.map((c, i) => (
             <motion.div
               key={i}
@@ -74,7 +74,7 @@ export default function UseCases() {
               className="rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow"
             >
               {/* Photo */}
-              <div className="relative h-56 w-full">
+              <div className="relative h-64 w-full">
                 <Image
                   src={c.photo}
                   alt={c.alt}
@@ -88,7 +88,7 @@ export default function UseCases() {
                 </span>
               </div>
               {/* Text */}
-              <div className="p-7 bg-white">
+              <div className="p-8 bg-white">
                 <p className="text-xs text-slate-500 font-medium mb-2">{c.label}</p>
                 <h3 className="font-bold text-slate-800 text-xl mb-3">{c.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{c.desc}</p>
