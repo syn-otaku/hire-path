@@ -95,7 +95,7 @@ export default function Pricing() {
                 <span className={`text-4xl font-bold ${plan.highlight ? "text-white" : "text-slate-900"}`}>
                   {plan.price}
                 </span>
-                <span className={`text-sm mb-1 ${plan.highlight ? "text-indigo-200" : "text-slate-400"}`}>
+                <span className={`text-sm mb-1 ${plan.highlight ? "text-indigo-200" : "text-slate-500"}`}>
                   {plan.unit}
                 </span>
               </div>
@@ -119,10 +119,10 @@ export default function Pricing() {
 
               <a
                 href="#"
-                className={`block text-center font-semibold py-3 rounded-xl transition-colors ${
+                className={`block text-center font-semibold py-3 rounded-xl transition-colors outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
                   plan.highlight
-                    ? "bg-white text-indigo-600 hover:bg-indigo-50"
-                    : "bg-indigo-600 text-white hover:bg-indigo-700"
+                    ? "bg-white text-indigo-600 hover:bg-indigo-50 focus-visible:ring-indigo-300"
+                    : "bg-indigo-600 text-white hover:bg-indigo-700 focus-visible:ring-indigo-400"
                 }`}
               >
                 {plan.cta}

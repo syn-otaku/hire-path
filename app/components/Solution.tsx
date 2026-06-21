@@ -38,7 +38,7 @@ export default function Solution() {
               <p className="text-2xl font-bold text-indigo-600">
                 −42<span className="text-base font-semibold">%</span>
               </p>
-              <p className="text-xs text-slate-400 mt-0.5">導入後平均（サンプルデータ）</p>
+              <p className="text-xs text-slate-500 mt-0.5">導入後平均（サンプルデータ）</p>
             </div>
           </motion.div>
 

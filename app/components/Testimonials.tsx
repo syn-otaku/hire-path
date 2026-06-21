@@ -84,7 +84,7 @@ export default function Testimonials() {
                 <div>
                   <p className="font-semibold text-slate-800">{t.name}</p>
                   <p className="text-sm text-slate-500">{t.title}</p>
-                  <p className="text-xs text-slate-400">{t.company}</p>
+                  <p className="text-xs text-slate-500">{t.company}</p>
                 </div>
               </div>
             </motion.div>

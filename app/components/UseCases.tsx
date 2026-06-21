@@ -89,7 +89,7 @@ export default function UseCases() {
               </div>
               {/* Text */}
               <div className="p-7 bg-white">
-                <p className="text-xs text-slate-400 font-medium mb-2">{c.label}</p>
+                <p className="text-xs text-slate-500 font-medium mb-2">{c.label}</p>
                 <h3 className="font-bold text-slate-800 text-xl mb-3">{c.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{c.desc}</p>
               </div>

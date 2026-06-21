@@ -28,11 +28,19 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center">
-            <span className="text-white text-sm font-bold">H</span>
-          </div>
-          <span className="text-slate-900 font-semibold text-lg">HirePath</span>
+        <a href="#" className="flex items-center gap-2.5">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="url(#logo-grad)" />
+            <path d="M9 8v16M9 16h14M23 8v16" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <circle cx="23" cy="8" r="2.5" fill="#34D399" />
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#6366F1" />
+                <stop offset="1" stopColor="#4F46E5" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span className="text-slate-900 font-bold text-lg tracking-tight">HirePath</span>
         </a>
 
         {/* Desktop Nav */}
@@ -58,7 +66,7 @@ export default function Navbar() {
           </a>
           <a
             href="#"
-            className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 outline-none"
           >
             無料デモを見る
           </a>
