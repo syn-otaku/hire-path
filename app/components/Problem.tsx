@@ -45,7 +45,7 @@ export default function Problem() {
           <span className="text-indigo-600 text-sm font-semibold tracking-widest uppercase mb-3 block">
             Problem
           </span>
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
             採用担当者が毎日感じる、5つの課題
           </h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto">

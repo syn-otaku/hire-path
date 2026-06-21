@@ -23,7 +23,7 @@ const plans = [
     name: "Growth",
     price: "¥29,800",
     unit: "/ 月",
-    desc: "成長期の採用チーム向け（人気No.1）",
+    desc: "成長期の採用チーム向け",
     features: [
       "求人掲載 無制限",
       "AIマッチング機能",
@@ -66,12 +66,13 @@ export default function Pricing() {
           <span className="text-indigo-600 text-sm font-semibold tracking-widest uppercase mb-3 block">
             Pricing
           </span>
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
             シンプルな料金体系
           </h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto">
             規模に合わせて選べる3プラン。いつでもアップグレード・解約可能。
           </p>
+          <p className="text-xs text-slate-400 mt-3">※ 料金・プランはポートフォリオサンプルです。実際のサービスではありません。</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">

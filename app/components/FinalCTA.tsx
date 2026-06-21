@@ -34,25 +34,24 @@ export default function FinalCTA() {
               <br />
               はたらき方を変えよう。
             </h2>
-            <p className="text-indigo-200 text-base mb-3 leading-relaxed">
-              このCTAセクションは、ユーザーに行動を促す最終訴求エリアのデザインサンプルです。
-            </p>
-            <p className="text-indigo-300 text-sm mb-10">
-              ※ ボタンリンク・フォームは実装されていません
+            <p className="text-indigo-200 text-base mb-10 leading-relaxed">
+              採用管理SaaSのCTAセクション制作サンプルです。
+              <br />
+              <span className="text-indigo-300 text-sm">※ ボタン・フォームは実装されていません</span>
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
                 href="#"
                 className="inline-flex items-center justify-center gap-2 bg-white text-indigo-700 font-semibold px-8 py-4 rounded-xl hover:bg-indigo-50 transition-colors text-base focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-900 outline-none"
               >
-                無料デモを見る（サンプル）
+                無料デモを見る
                 <ArrowRight size={18} />
               </a>
               <a
                 href="#"
                 className="inline-flex items-center justify-center gap-2 border border-white/40 text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors text-base focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-900 outline-none"
               >
-                資料を請求する（サンプル）
+                資料を請求する
               </a>
             </div>
           </motion.div>

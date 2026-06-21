@@ -62,7 +62,7 @@ export default function Features() {
           <span className="text-indigo-600 text-sm font-semibold tracking-widest uppercase mb-3 block">
             Features
           </span>
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
             採用に必要な機能が、すべて揃っている。
           </h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto">
